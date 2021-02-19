@@ -1,0 +1,39 @@
+vue    .prettierrc文件配置
+
+
+
+##### 作用：自定义代码格式
+
+```powershell
+npm i prettier -g
+```
+
+项目根目录下创建.prettierrc配置文件：
+
+```json
+{
+	// 超过最大值换行
+    "printWidth": 200,
+    // 让prettier使用eslint的代码格式进行校验
+    "eslintIntegration": true,
+    // 让prettier使用stylelint的代码格式进行校验
+    "stylelintIntegration": true,
+    // tab键宽度，默认为2
+    "tabWidth": 4,
+    // 行末加分号
+    "semi": true,
+    // 用单引号代替双引号
+    "singleQuote": true,
+    // 对象&数组是否追加空格
+    // e.g. false: {foo:bar}
+    // true: { foo: bar }
+    "bracketSpacing": true,
+    // 箭头函数参数括号 默认avoid 可选 avoid | always
+    // avoid 能省略括号的时候就省略 例如x => x
+    // always 总是有括号
+    "arrowParens": "avoid"
+}
+```
+
+1.vscode安装插件prettier - Code formatter
+ 2.快捷键：alt + shift + f
